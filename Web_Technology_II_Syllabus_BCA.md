@@ -16,11 +16,7 @@ Web Technology - I (BCA-WT301) — Knowledge of HTML5, CSS3, and Bootstrap 5.
 ---
 
 ## Course Objectives:
-1. To introduce students to JavaScript programming for building interactive and dynamic web pages.
-2. To enable students to apply advanced JavaScript concepts including DOM manipulation, events, and asynchronous programming.
-3. To familiarize students with jQuery library for simplified DOM manipulation, event handling, and AJAX operations.
-4. To equip students with server-side scripting skills using PHP and database connectivity with MySQL.
-5. To enable students to build dynamic, data-driven web applications using AJAX integration with PHP and MySQL.
+Building upon Web Technology - I, this course equips students with JavaScript for interactive web pages, jQuery for simplified DOM operations and effects, and PHP with MySQL for server-side scripting and database management. Students will further learn to integrate AJAX with PHP and MySQL to develop dynamic, real-time web applications without page reloads. The course bridges the gap between frontend and backend development, preparing students for full-stack web application development.
 
 ---
 
@@ -28,10 +24,10 @@ Web Technology - I (BCA-WT301) — Knowledge of HTML5, CSS3, and Bootstrap 5.
 After completion of the course, the student will be able to:
 
 1. **CO1:** Write JavaScript programs to add interactivity to web pages using variables, functions, DOM manipulation, and event handling.
-2. **CO2:** Apply advanced JavaScript concepts including arrays, objects, ES6+ features, form validation, and asynchronous programming using Fetch API.
-3. **CO3:** Use jQuery to simplify DOM manipulation, handle events, apply visual effects, and perform AJAX calls to fetch and display data dynamically.
-4. **CO4:** Develop server-side web applications using PHP with form handling, session management, and MySQL database CRUD operations.
-5. **CO5:** Build complete dynamic web applications by integrating AJAX with PHP and MySQL for real-time, page-reload-free data communication.
+2. **CO2:** Use jQuery to simplify DOM manipulation, handle events, apply visual effects, and perform AJAX calls to fetch and display data dynamically.
+3. **CO3:** Develop server-side PHP scripts using core PHP syntax, functions, arrays, and string operations to process and manage web data.
+4. **CO4:** Build PHP-based web applications with form handling, file operations, session management, and MySQL database CRUD operations.
+5. **CO5:** Integrate AJAX with PHP and MySQL to build complete dynamic web applications with real-time, page-reload-free data communication.
 
 ---
 
@@ -41,8 +37,8 @@ After completion of the course, the student will be able to:
 | CO-PO Mapping | PO1 | PO2 | PO3 | PO4 | PO5 | PO6 | PO7 | PO8 | PO9 | PO10 | PO11 | PO12 | PSO1 | PSO2 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | CO1 | 3 | 2 | 2 | 1 | 3 | 1 | 1 | - | 2 | 2 | 1 | 2 | 3 | 2 |
-| CO2 | 3 | 3 | 2 | 2 | 3 | 1 | 1 | - | 2 | 2 | 1 | 2 | 3 | 3 |
-| CO3 | 2 | 3 | 2 | 2 | 3 | 1 | 1 | - | 2 | 2 | 1 | 2 | 3 | 3 |
+| CO2 | 2 | 3 | 2 | 2 | 3 | 1 | 1 | - | 2 | 2 | 1 | 2 | 3 | 3 |
+| CO3 | 3 | 2 | 2 | 2 | 3 | 1 | 1 | - | 2 | 2 | 1 | 2 | 3 | 2 |
 | CO4 | 3 | 3 | 3 | 2 | 3 | 2 | 1 | - | 2 | 2 | 1 | 2 | 3 | 3 |
 | CO5 | 3 | 3 | 3 | 3 | 3 | 2 | 2 | - | 3 | 3 | 2 | 3 | 3 | 3 |
 
@@ -50,97 +46,91 @@ After completion of the course, the student will be able to:
 
 ## Unit 1 — JavaScript Core Programming &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08 Hours
 
-- Introduction to JavaScript: History, Role of JavaScript in Web Development, Client-side vs Server-side scripting.
-- Adding JavaScript to HTML: Inline, Internal (`<script>` tag), External JS file (`.js`).
-- Variables and Data Types: `var`, `let`, `const`; Number, String, Boolean, Null, Undefined, Symbol.
-- Operators: Arithmetic, Assignment, Comparison, Logical, Bitwise, Ternary Operator.
-- Control Structures: `if`, `if-else`, `else-if`, `switch-case`, Nested conditions.
-- Loops: `for`, `while`, `do-while`, `for-in`, `for-of`, `break` and `continue`.
-- Functions: Function Declaration, Function Expression, Arrow Functions (`=>`), Default Parameters, Return values.
-- Scope: Global Scope, Local Scope, Block Scope, Hoisting, Closures.
-- DOM (Document Object Model): Introduction to DOM Tree, Selecting Elements (`getElementById`, `getElementsByClassName`, `querySelector`, `querySelectorAll`).
-- DOM Manipulation: Changing content (`innerHTML`, `textContent`), Changing styles (`style`), Adding/Removing classes (`classList`), Creating and Appending elements.
-- Events: `addEventListener`, Common Events (click, dblclick, mouseover, mouseout, keyup, keydown, submit, change, load), Event Object, `preventDefault()`.
+- Introduction to JavaScript: History, Role of JavaScript in Web Development, Client-side vs Server-side scripting, JavaScript Engines.
+- Adding JavaScript to HTML: Inline, Internal (`<script>` tag), External JS file (`.js`), Best practices for script placement.
+- Variables and Data Types: `var`, `let`, `const`; Primitive types — Number, String, Boolean, Null, Undefined, Symbol; `typeof` operator.
+- Operators: Arithmetic, Assignment, Comparison (`==` vs `===`), Logical (`&&`, `||`, `!`), Bitwise, Ternary Operator (`? :`).
+- Control Structures: `if`, `if-else`, `else-if` ladder, `switch-case`, Nested conditions.
+- Loops: `for`, `while`, `do-while`, `for-in`, `for-of`, `break` and `continue` statements.
+- Functions: Function Declaration, Function Expression, Arrow Functions (`=>`), Default Parameters, Rest Parameters, Return values, Anonymous Functions.
+- Scope and Hoisting: Global Scope, Local Scope, Block Scope (`let`/`const`), Variable Hoisting, Function Hoisting, Closures.
+- DOM (Document Object Model): Introduction to DOM Tree structure, Selecting Elements — `getElementById`, `getElementsByClassName`, `getElementsByTagName`, `querySelector`, `querySelectorAll`.
+- DOM Manipulation: Changing content (`innerHTML`, `textContent`, `innerText`), Changing styles (`style` property), Adding/Removing/Toggling classes (`classList.add`, `classList.remove`, `classList.toggle`), Creating, Appending, Removing DOM elements (`createElement`, `appendChild`, `removeChild`).
+- Events: `addEventListener`, `removeEventListener`; Common Events — `click`, `dblclick`, `mouseover`, `mouseout`, `mouseenter`, `mouseleave`, `keyup`, `keydown`, `keypress`, `submit`, `change`, `input`, `load`, `DOMContentLoaded`; Event Object properties, `preventDefault()`, `stopPropagation()`.
 
-**Practical Application:** Creating an interactive web page with a live character counter, dynamic background color changer, show/hide elements, and a simple quiz application using JavaScript DOM and Events.
-
----
-
-## Unit 2 — Advanced JavaScript &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08 Hours
-
-- Arrays: Creating Arrays, Array Methods (`push`, `pop`, `shift`, `unshift`, `splice`, `slice`, `map`, `filter`, `reduce`, `find`, `forEach`, `sort`, `reverse`).
-- Objects: Object Literals, Accessing Properties (dot notation, bracket notation), Object Methods, `this` keyword, Object Destructuring.
-- ES6+ Features: Template Literals (`` ` `` backticks), Spread Operator (`...`), Rest Parameters, Destructuring (Array & Object), Modules (`import`/`export`).
-- String Methods: `toUpperCase`, `toLowerCase`, `trim`, `split`, `replace`, `includes`, `startsWith`, `endsWith`, `indexOf`, `substring`.
-- Error Handling: `try`, `catch`, `finally`, `throw`, Custom Error Messages.
-- Asynchronous JavaScript: Synchronous vs Asynchronous execution, Callback Functions, Callback Hell, Promises (`.then()`, `.catch()`, `.finally()`), `async`/`await`.
-- Fetch API: Making HTTP GET and POST requests, Handling JSON responses, Displaying fetched data on webpage.
-- Web Storage: `localStorage` (setItem, getItem, removeItem, clear), `sessionStorage`, Cookies — Introduction and usage.
-- Client-side Form Validation: Validating text, email, password (regex), number ranges, required fields using JavaScript without third-party libraries.
-- Regular Expressions (Regex): Basic patterns, `test()`, `match()`, `replace()` for input validation.
-
-**Practical Application:** Building a dynamic To-Do List application with localStorage persistence, a student registration form with full JavaScript validation, and fetching and displaying live data (weather / jokes / quotes) using Fetch API and a public REST API.
+**Practical Application:** Creating an interactive web page featuring a live character counter, dynamic background colour changer, image show/hide toggle, and a JavaScript-powered quiz application using DOM manipulation and Event handling.
 
 ---
 
-## Unit 3 — jQuery &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08 Hours
+## Unit 2 — jQuery &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08 Hours
 
-- Introduction to jQuery: What is jQuery, Advantages over plain JavaScript, CDN vs Local setup, `$(document).ready()`.
-- jQuery Selectors: Element, Class, ID, Attribute, `:first`, `:last`, `:even`, `:odd`, `:nth-child`, `:not` selectors.
-- jQuery DOM Manipulation: `html()`, `text()`, `val()`, `attr()`, `prop()`, `css()`, `addClass()`, `removeClass()`, `toggleClass()`, `append()`, `prepend()`, `after()`, `before()`, `remove()`, `empty()`, `clone()`.
-- jQuery Event Handling: `click()`, `dblclick()`, `hover()`, `focus()`, `blur()`, `change()`, `submit()`, `keyup()`, `keydown()`, `on()`, `off()`, Event Delegation.
-- jQuery Effects and Animations: `show()`, `hide()`, `toggle()`, `fadeIn()`, `fadeOut()`, `fadeToggle()`, `slideUp()`, `slideDown()`, `slideToggle()`, `animate()`, `stop()`, `delay()`.
-- jQuery Traversal: `parent()`, `parents()`, `children()`, `siblings()`, `next()`, `prev()`, `find()`, `closest()`, `filter()`.
-- jQuery AJAX: `$.ajax()` — type, url, data, success, error, complete; `$.get()`, `$.post()`, `$.getJSON()`, `$.load()`, Handling JSON responses.
-- jQuery Form Handling: Serializing form data (`serialize()`, `serializeArray()`), Dynamic form validation with jQuery.
-- jQuery Plugins: Introduction to jQuery Plugins, Using popular plugins — **DataTables** (sortable, searchable tables), **Slick Slider** (image carousel), **Select2** (enhanced dropdowns).
-- jQuery UI: Introduction to jQuery UI — Draggable, Droppable, Sortable, Datepicker, Dialog widgets.
+- Introduction to jQuery: What is jQuery, Advantages over plain JavaScript, CDN vs Local setup, jQuery syntax, `$(document).ready()` vs `$(function(){})`.
+- jQuery Selectors: Element, Class (`$('.class')`), ID (`$('#id')`), Attribute (`[attr=value]`), Pseudo-class — `:first`, `:last`, `:even`, `:odd`, `:nth-child(n)`, `:not()`, `:contains()`, Multiple selectors.
+- jQuery DOM Manipulation: `html()`, `text()`, `val()`, `attr()`, `removeAttr()`, `prop()`, `css()`, `width()`, `height()`; `addClass()`, `removeClass()`, `toggleClass()`, `hasClass()`; `append()`, `prepend()`, `appendTo()`, `after()`, `before()`, `remove()`, `empty()`, `clone()`, `wrap()`, `unwrap()`.
+- jQuery Event Handling: `click()`, `dblclick()`, `hover()`, `mouseenter()`, `mouseleave()`, `focus()`, `blur()`, `change()`, `submit()`, `keyup()`, `keydown()`, `on()`, `off()`, `one()`; Event Delegation using `.on()`, `$(this)` context.
+- jQuery Effects and Animations: `show()`, `hide()`, `toggle()` with speed parameter; `fadeIn()`, `fadeOut()`, `fadeToggle()`, `fadeTo()`; `slideUp()`, `slideDown()`, `slideToggle()`; Custom `animate()` — properties, duration, easing; `stop()`, `finish()`, `delay()`, Callback functions in effects.
+- jQuery DOM Traversal: `parent()`, `parents()`, `parentsUntil()`, `children()`, `find()`, `siblings()`, `next()`, `nextAll()`, `nextUntil()`, `prev()`, `prevAll()`, `closest()`, `filter()`, `first()`, `last()`, `eq()`.
+- jQuery Form Handling: Reading and setting form values (`val()`), Serializing form data (`serialize()`, `serializeArray()`), Dynamic form validation with jQuery.
+- jQuery AJAX: `$.ajax()` — `type`, `url`, `data`, `dataType`, `success`, `error`, `complete` callbacks; `$.get()`, `$.post()`, `$.getJSON()`, `$.load()`; Handling JSON responses, `beforeSend` and `complete` for loading indicators.
+- jQuery Plugins: Introduction to jQuery Plugins, Integrating popular plugins — **DataTables** (sortable, searchable, paginated tables), **Slick Slider** / **Owl Carousel** (image sliders), **Select2** (enhanced dropdowns), **Toastr** (notifications).
+- jQuery UI: Introduction to jQuery UI widgets — Draggable, Droppable, Sortable, Resizable, Datepicker, Dialog (modal), Accordion, Tabs, Autocomplete.
 
-**Practical Application:** Creating an interactive product filter page using jQuery selectors and DOM manipulation, an animated image gallery with jQuery effects, a live search filter using jQuery, and an AJAX-based data fetching demo using `$.get()` and `$.ajax()`.
-
----
-
-## Unit 4 — PHP — Server Side Scripting &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08 Hours
-
-- Introduction to PHP: What is PHP, Features of PHP, Client-side vs Server-side scripting, Setting up environment (XAMPP / WAMP / LAMP).
-- PHP Syntax: PHP tags (`<?php ?>`), Echo and Print, Comments, Variables (`$`), Constants (`define()`), Data Types (Integer, Float, String, Boolean, Array, NULL).
-- Operators: Arithmetic, Assignment, Comparison, Logical, String Concatenation (`.`).
-- Control Structures: `if`, `if-else`, `elseif`, `switch`, Ternary Operator.
-- Loops: `for`, `while`, `do-while`, `foreach` (for arrays), `break`, `continue`.
-- Functions: User-defined functions, Function arguments, Default parameter values, Return values, Variable scope (global, local), `global` keyword.
-- Arrays: Indexed Arrays, Associative Arrays, Multidimensional Arrays; Array functions (`array_push`, `array_pop`, `array_merge`, `sort`, `count`, `array_search`, `in_array`, `array_keys`, `array_values`).
-- String Functions: `strlen`, `strtoupper`, `strtolower`, `str_replace`, `substr`, `strpos`, `trim`, `explode`, `implode`, `sprintf`.
-- Form Handling: `$_GET`, `$_POST`, `$_REQUEST`, `$_SERVER`; Form validation and sanitization (`filter_var`, `htmlspecialchars`, `trim`).
-- File Handling: `fopen()`, `fread()`, `fwrite()`, `fclose()`, `file_get_contents()`, `file_put_contents()`, File Upload handling (`$_FILES`).
-- Sessions and Cookies: `session_start()`, `$_SESSION`, `session_destroy()`; `setcookie()`, `$_COOKIE`, Cookie expiry.
-- PHP with MySQL: Introduction to MySQLi and PDO, Connecting to MySQL database, Performing CRUD operations (Create, Read, Update, Delete), Prepared Statements (SQL Injection prevention), Fetching results (`fetch_assoc()`, `fetch_all()`).
-
-**Practical Application:** Building a complete PHP + MySQL Student Management System — Registration form (INSERT), Display all students (SELECT), Update student details (UPDATE), Delete a student (DELETE), with session-based Login & Logout.
+**Practical Application:** Building an interactive product filter page with jQuery selectors and DOM manipulation, an animated image gallery with jQuery effects and transitions, a live table search filter, a dynamic Accordion/Tab panel using jQuery UI, and an AJAX-based data fetching demo using `$.get()` and `$.ajax()`.
 
 ---
 
-## Unit 5 — AJAX with PHP & MySQL Integration &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08 Hours
+## Unit 3 — PHP — Core Scripting & Functions &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08 Hours
 
-- Introduction to AJAX: What is AJAX, Synchronous vs Asynchronous communication, How AJAX works (Browser → XMLHttpRequest → Server → Response → DOM Update).
-- XMLHttpRequest (XHR): Creating XHR object, `open()`, `send()`, `onreadystatechange`, `readyState` values, `status` codes, Handling response (`responseText`, `responseXML`).
-- AJAX with Vanilla JavaScript (Fetch API): GET and POST requests to PHP scripts, Sending and receiving JSON data, Updating DOM without page reload.
-- AJAX with jQuery: `$.ajax()`, `$.get()`, `$.post()` — sending data to PHP, receiving JSON response, Handling success and error callbacks.
-- PHP as AJAX Backend: Writing PHP scripts to handle AJAX requests, Returning JSON responses (`json_encode()`), Receiving POST data (`$_POST`), Connecting to MySQL and returning query results as JSON.
-- Real-World AJAX Applications:
-  - **Live Search:** Searching database records as user types (keyup event + AJAX + PHP + MySQL).
-  - **Dynamic Dropdown:** Populating dependent dropdowns (State → City) using AJAX.
-  - **Like / Dislike Counter:** Updating counts in database without page refresh.
-  - **Real-time Form Validation:** Checking username/email availability in database using AJAX.
-  - **Dynamic Data Table:** Loading, filtering, and paginating database records using AJAX.
-- JSON in AJAX: `JSON.stringify()`, `JSON.parse()`, `json_encode()` in PHP, `json_decode()` in PHP, Sending complex data objects via AJAX.
-- File Upload using AJAX: Uploading files asynchronously using FormData object, Displaying upload progress.
-- Security in AJAX Applications: Validating and sanitizing AJAX inputs on server side, CSRF token basics, Preventing direct PHP script access.
-- Mini Project — Complete Dynamic Web Application:
-  - Frontend: HTML5 + CSS3 + Bootstrap 5 + JavaScript + jQuery
-  - Backend: PHP + MySQL
-  - Features: User Login/Registration (Session), CRUD operations via AJAX, Live Search, Responsive UI
+- Introduction to PHP: What is PHP, Features and Advantages of PHP, Client-side vs Server-side scripting, How PHP works with a web server, Setting up environment — XAMPP / WAMP / LAMP.
+- PHP Syntax: PHP tags (`<?php ?>`), `echo` and `print`, PHP comments (single-line `//`, multi-line `/* */`), PHP in HTML.
+- Variables and Data Types: Variable declaration (`$`), naming rules; Data types — Integer, Float, String, Boolean, Array, Object, NULL; `var_dump()`, `gettype()`, Type casting.
+- Constants: `define()`, `const` keyword, Magic constants (`__FILE__`, `__LINE__`, `__DIR__`).
+- Operators: Arithmetic, Assignment, Comparison (`==`, `===`, `!=`, `!==`), Logical (`&&`, `||`, `!`, `and`, `or`), String Concatenation (`.`), Increment/Decrement, Null Coalescing (`??`), Spaceship (`<=>`).
+- Control Structures: `if`, `if-else`, `elseif`, `switch-case`, Ternary Operator, Null Coalescing assignment.
+- Loops: `for`, `while`, `do-while`, `foreach` (for arrays); `break`, `continue`; Nested loops.
+- Functions: User-defined functions, Function arguments (by value, by reference `&`), Default parameter values, Variable number of arguments (`func_get_args()`), Return values, Variable scope — local, global, static; `global` keyword, `static` keyword.
+- String Functions: `strlen()`, `strtoupper()`, `strtolower()`, `ucfirst()`, `ucwords()`, `str_replace()`, `substr()`, `strpos()`, `strrpos()`, `str_contains()`, `str_starts_with()`, `str_ends_with()`, `trim()`, `ltrim()`, `rtrim()`, `explode()`, `implode()`, `str_repeat()`, `str_word_count()`, `sprintf()`, `number_format()`, `nl2br()`, `htmlspecialchars()`, `strip_tags()`.
+- Math Functions: `abs()`, `ceil()`, `floor()`, `round()`, `sqrt()`, `pow()`, `max()`, `min()`, `rand()`, `mt_rand()`, `pi()`.
+- Date and Time Functions: `date()`, `time()`, `mktime()`, `strtotime()`, `date_create()`, `date_format()`, `date_diff()`.
 
-**Practical Application:** Building a complete **Dynamic Student Portal** — User login/registration with sessions, Add/Edit/Delete student records using AJAX (no page reload), Live search students by name/roll number, Display records in a Bootstrap DataTable, File upload for student profile photo — all integrated with PHP + MySQL backend.
+**Practical Application:** Writing PHP programs to perform string operations, mathematical computations, date/time formatting, and building a simple PHP-based calculator and unit converter embedded in an HTML page.
+
+---
+
+## Unit 4 — PHP — Arrays, Forms, File Handling & Sessions &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08 Hours
+
+- Arrays in PHP: Indexed Arrays, Associative Arrays, Multidimensional Arrays; Creating arrays (`array()`, `[]`), Accessing elements, Modifying arrays.
+- Array Functions: `count()`, `sizeof()`, `array_push()`, `array_pop()`, `array_shift()`, `array_unshift()`, `array_merge()`, `array_slice()`, `array_splice()`, `array_reverse()`, `sort()`, `rsort()`, `asort()`, `arsort()`, `ksort()`, `krsort()`, `array_search()`, `in_array()`, `array_keys()`, `array_values()`, `array_unique()`, `array_flip()`, `array_combine()`, `array_map()`, `array_filter()`, `array_chunk()`, `compact()`, `extract()`.
+- Form Handling in PHP: HTML Forms with PHP, `$_GET`, `$_POST`, `$_REQUEST`, `$_SERVER` superglobals; Form validation — `isset()`, `empty()`, `filter_var()` (FILTER_VALIDATE_EMAIL, FILTER_VALIDATE_INT, FILTER_SANITIZE_STRING), `htmlspecialchars()`, `trim()`, `stripslashes()`; Handling multiple form submissions, Sticky forms.
+- File Handling: Opening files — `fopen()` modes (`r`, `w`, `a`, `r+`, `w+`); Reading — `fread()`, `fgets()`, `fgetc()`, `file()`, `file_get_contents()`; Writing — `fwrite()`, `file_put_contents()`; `fclose()`, `feof()`, `rewind()`; Checking files — `file_exists()`, `is_file()`, `is_dir()`, `filesize()`; Creating/Deleting — `mkdir()`, `rmdir()`, `unlink()`, `rename()`, `copy()`.
+- File Upload: Handling `$_FILES` superglobal, File upload form (`enctype="multipart/form-data"`), Validating file type (`mime_content_type()`, file extension check), Validating file size, Moving uploaded file (`move_uploaded_file()`), Security best practices for file upload.
+- Sessions in PHP: What are Sessions, `session_start()`, `$_SESSION` — setting, reading, modifying, unsetting session variables; `session_destroy()`, `session_regenerate_id()`, Session timeout, Passing data across multiple pages using sessions.
+- Cookies in PHP: What are Cookies, `setcookie()` — name, value, expiry, path, domain, secure; `$_COOKIE` — reading cookies; Deleting cookies, Difference between Sessions and Cookies, Use cases.
+- PHP Include and Require: `include`, `require`, `include_once`, `require_once` — creating reusable header, footer, and navigation components.
+
+**Practical Application:** Building a PHP multi-page Student Registration System — a registration form with full validation, file upload for student photo, display of registered students, navigation using sessions for logged-in state, reusable header/footer with `include`, and cookie-based remember-me feature.
+
+---
+
+## Unit 5 — PHP with MySQL & AJAX Integration &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08 Hours
+
+- Introduction to MySQL: What is MySQL, Relational Database concepts, MySQL data types, Creating databases and tables using phpMyAdmin and SQL queries.
+- PHP with MySQL (MySQLi): Connecting to MySQL — `mysqli_connect()` / Object-Oriented `new mysqli()`; Checking connection errors, Closing connection `mysqli_close()`; Executing queries — `mysqli_query()`, `mysqli_fetch_assoc()`, `mysqli_fetch_array()`, `mysqli_fetch_all()`, `mysqli_num_rows()`, `mysqli_affected_rows()`, `mysqli_insert_id()`.
+- CRUD Operations with PHP & MySQL: **Create** — INSERT query with form data; **Read** — SELECT query, displaying records in HTML table; **Update** — UPDATE query with pre-filled edit form; **Delete** — DELETE query with confirmation; Search and filter records.
+- Prepared Statements: What are Prepared Statements, Preventing SQL Injection, `mysqli_prepare()`, `bind_param()`, `execute()`, `get_result()`, PDO basics and advantages over MySQLi.
+- Introduction to AJAX: What is AJAX, Synchronous vs Asynchronous communication, How AJAX works — Browser → XMLHttpRequest → PHP Script → MySQL → JSON Response → DOM Update.
+- AJAX with JavaScript (Fetch API): Sending GET and POST requests to PHP scripts, Sending form data, Receiving and parsing JSON responses (`JSON.parse()`), Updating DOM without page reload.
+- AJAX with jQuery: `$.ajax()`, `$.get()`, `$.post()` — sending data to PHP, receiving JSON response (`json_encode()` in PHP), Handling `success`, `error`, `complete` callbacks, Showing loading spinner during AJAX call.
+- Real-World AJAX + PHP + MySQL Applications:
+  - **Live Search:** Fetching matching database records on `keyup` event using AJAX.
+  - **Dynamic Dependent Dropdown:** Populating Cities based on selected State from MySQL.
+  - **AJAX CRUD:** Add, Edit, Delete records without page refresh, updating DOM table dynamically.
+  - **Real-time Availability Check:** Checking username/email existence in database via AJAX on form input.
+  - **Like / Counter System:** Incrementing/decrementing counts in MySQL without reload.
+- JSON in AJAX: `json_encode()` and `json_decode()` in PHP, `JSON.stringify()` and `JSON.parse()` in JavaScript, Sending and receiving complex data objects.
+- Security in Web Applications: Sanitizing and validating AJAX inputs server-side, CSRF token concept, Preventing direct access to PHP scripts, Secure file upload, Password hashing with `password_hash()` and `password_verify()`.
+
+**Practical Application:** Building a complete **Dynamic Student Management Portal** — User Login/Registration with session authentication, Add/Edit/Delete student records using AJAX (no page reload), Live search by name or roll number, Dependent dropdown for department/course selection, Bootstrap DataTable for record display, Profile photo upload via AJAX, all integrated with PHP + MySQL backend and responsive Bootstrap 5 frontend.
 
 ---
 
